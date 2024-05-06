@@ -36,7 +36,7 @@ class DashboardFragment : Fragment() {
 
         }
 
-        val nombre = root.findViewById<Button>(R.id.btnNombre)
+
 
         return root
     }

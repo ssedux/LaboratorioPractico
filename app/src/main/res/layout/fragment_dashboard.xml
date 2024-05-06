@@ -6,14 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <Button
-        android:id="@+id/btnNombre"
+    <TextView
+        android:id="@+id/txt_Nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="nombre"
+        android:layout_marginTop="184dp"
+        android:text="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="imprimirTexto"
+        android:text="Nombre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
+        app:layout_constraintVertical_bias="0.411" />
 </androidx.constraintlayout.widget.ConstraintLayout>

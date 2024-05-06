@@ -8,6 +8,8 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import Eduardo.Sanchez.myapplication.databinding.ActivityMainBinding
+import android.view.View
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,5 +33,13 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
+    }
+
+    //imprir texto
+    fun imprimirTexto(view: View) {
+        val TextView = findViewById<TextView>(R.id.txt_Nombre)
+        TextView.text = "Christhian Eduardo Sanchez Lopez"
     }
 }
